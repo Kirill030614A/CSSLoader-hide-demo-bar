@@ -1,7 +1,7 @@
 {
   "name": "Hide Demo Thing",
   "manifest_version": 8,
-  "version": "v1.0",
+  "version": "v1.1",
   "target": "Other",
   "inject": {
     "desktop.css": [

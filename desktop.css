@@ -1,0 +1,30 @@
+/* Hide Steam's green DEMO badge in Library grid tiles and game detail/hero views. */
+
+/* Stable semantic selectors used by several Steam client builds. */
+.library_Badge,
+.gamepaddialog_Badge,
+.gamepaddialog_GameIconDemo,
+[class*="DemoBadge"],
+[class*="DemoLabel"],
+[class*="GameIconDemo"],
+[class*="demoBadge"],
+[class*="demoLabel"],
+[class*="gameIconDemo"] {
+  display: none !important;
+}
+
+/* Hashed Steam UI classes generally retain these meaningful fragments. */
+[class*="Badge"][class*="Demo"],
+[class*="Badge"][class*="demo"],
+[class*="Label"][class*="Demo"],
+[class*="Label"][class*="demo"] {
+  display: none !important;
+}
+
+/* The badge can be nested in the library hero/game-details presentation. */
+[class*="Hero"] [class*="Demo"],
+[class*="hero"] [class*="Demo"],
+[class*="GameDetails"] [class*="Demo"],
+[class*="gameDetails"] [class*="Demo"] {
+  display: none !important;
+}

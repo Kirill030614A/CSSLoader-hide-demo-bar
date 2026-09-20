@@ -1,0 +1,16 @@
+/* Big Picture overlays can render the library hero badge in their own tree. */
+.library_Badge,
+.gamepaddialog_Badge,
+.gamepaddialog_GameIconDemo,
+[class*="DemoBadge"],
+[class*="DemoLabel"],
+[class*="GameIconDemo"],
+[class*="demoBadge"],
+[class*="demoLabel"],
+[class*="gameIconDemo"],
+[class*="Badge"][class*="Demo"],
+[class*="Badge"][class*="demo"],
+[class*="Label"][class*="Demo"],
+[class*="Label"][class*="demo"] {
+  display: none !important;
+}
